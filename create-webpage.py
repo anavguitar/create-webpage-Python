@@ -22,15 +22,15 @@ body_description = input('Enter a brief description of the character: ')
 body_description = f'<p>{body_description}</p>\n'
 
 body_img = input('Enter the location/path of the character\'s image: ')
-body_img = f'<img src={body_img} alt="{file_name}">\n'
+body_img = f'<img src=pics/{body_img} alt="{file_name}">\n'
 
 combined_body = body_h1 + body_h2 + body_description + body_img
 
-page_head = open("page-head.txt", "r")
+page_head = open("assets/page-head.txt", "r")
 combined_head = ''.join(page_head.readlines())
 page_head.close()
 
-page_footer = open("page-footer.txt", "r")
+page_footer = open("assets/page-footer.txt", "r")
 combined_footer = ''.join(page_footer.readlines())
 page_footer.close()
 
